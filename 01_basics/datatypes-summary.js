@@ -35,3 +35,28 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ====================================
+
+// Stack(primitive) , Heap(non-primitive)
+
+let name = "user";
+let anotherName = name;
+anotherName = "Anurag";
+
+// console.log(name);
+// console.log(anotherName); // here anotherName change but not change name(stack)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+};
+
+let userTwo = userOne;
+
+userTwo.email = "anurag@google.com";
+// console.log(userOne.email);
+// console.log(userTwo.email);
+
+
+    
